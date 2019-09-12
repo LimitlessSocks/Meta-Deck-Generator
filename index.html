@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Meta&trade; Deck&copy; Generator&reg;</title>
+    <!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script> -->
+    <link rel="STYLESHEET" href="./ygo.css">
+    <script src="./ygo.js"></script>
+    
+</head>
+<body>
+    <h1>Meta&trade; Deck&copy; Generator&reg;</h1>
+    <h2>Last updated 4/7/2019</h2>
+    <div>
+        <button id="randomcard">Select a random card</button>
+    </div>
+    <div>
+        <button id="randomize">Randomize!</button>
+        <button id="generate">Generate decklist</button>
+    </div>
+    <table>
+        <tr id="decksize" class="datarow">
+            <td>Cards</td>
+            <td class="count"><input type="number"></td>
+            <td class="range">
+                <div class="slidecontainer">
+                    <input type="range" min="40" max="60" value="50" class="slider">
+                </div>
+            </td>
+        </tr>
+        <tr id="archetypes" class="datarow">
+            <td>Archetypes</td>
+            <td class="count"><input type="number"></td>
+            <td class="range">
+                <div class="slidecontainer">
+                    <input type="range" min="0" max="10" value="3" class="slider">
+                </div>
+            </td>
+        </tr>
+        <tr id="generics" class="datarow">
+            <td>Percent generic</td>
+            <td class="count"><input type="number"></td>
+            <td class="range">
+                <div class="slidecontainer">
+                    <input type="range" min="0" max="100" value="50" class="slider">
+                </div>
+            </td>
+        </tr>
+    </table>
+    <div id="notes"><em>No notes.</em></div>
+    <div>
+        <textarea id="output"></textarea>
+    </div>
+    <div>
+        File name: <input id="filename" value="XxXmetadeckXxX"> <button id="download" disabled>Download</button>
+    </div>
+</body>
+</html>
